@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Online Responsive Resume Demo</title>
+  <meta name="author" content="Bipul Bhushan Jha">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="w" itemscope itemtype="http://schema.org/Person">
+		<header class="clearfix">
+			<div id="info">			
+				<h1><span itemprop="name">Bipul Bhushan Jha</span></h1>
+				<h3><span itemprop="jobTitle">Frontend &amp; Web Developer</span></h3>
+				<small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				  <span itemprop="addressLocality">Whitefield</span>, 
+				  <span itemprop="addressRegion">Bangalore</span>, 
+				  <span itemprop="addressCountry">INDIA</span>
+				</small>
+				<small><span itemprop="email">bipuljha.17@gmail.com</span></small>
+				<small><a href="https://www.linkedin.com/in/bipul-jha-05b52a36/" itemprop="url">LinkedIn</a></small>
+			</div>
+			
+			<div id="photo">
+				<img src="images/dp.jpg" alt="bipul bhushan jha resume photo avatar" itemprop="image" />
+			</div>
+		</header>
+		
+		<section id="profile">
+			<h2>My History &amp; Profile</h2>
+			<p itemprop="description">A senior frontend engineer with 7.5 + years of experience in
+				building scalable applications. Always excited to learn the latest
+				technologies and solve challenging technical problems.</p>
+			
+			<p>Initially I started my career with coding websites using ASP.Net, but then I got my hands dirty with javascript and never saw back ever since. 
+				I worked on different javascript frameworks and like to continiously improve on the existing code. 
+				Currently I am working on React/Redux framework for creating responsive white labeled banking websites.</p>
+		</section>
+		
+		<section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+			<h2 itemprop="name">Skillset</h2>
+			<section id="skills-left">
+				<h4 itemprop="about">Development</h4>
+				<ul>
+					<li itemprop="itemListElement">HTML5/CSS3</li>
+					<li itemprop="itemListElement">JavaScript &amp; React/Redux frameworks</li>
+					<li itemprop="itemListElement">Swift for basic IOS development</li>
+					<li itemprop="itemListElement"></li>
+				</ul>
+			</section>
+			
+			<section id="skills-right">
+				<h4 itemprop="about">Software</h4>
+				<ul>
+					<li itemprop="itemListElement">VSCode and sublime</li>
+					<li itemprop="itemListElement">XCode 10</li>
+					<li itemprop="itemListElement">MS Office suite</li>
+					<li itemprop="itemListElement">SQL Server</li>
+					<li itemprop="itemListElement">POSTMAN</li>
+				</ul>
+			</section>
+		</section>
+		
+		<section id="education">
+			<h2>Past Education</h2>
+			<p><span itemprop="alumniOf">ICFAI University</span> graduate of 2011.</p>
+		</section>
+		
+		<section id="experience">
+			<h2>Work Experience</h2>
+			<h3>Senior Frontend developer VISA ~ 2015-Present</h3>
+				<h4>1.  Responsive Purchase alerts website for all VISA card holders</h4>
+				<p>
+					Developed resonsive website using react and backbone JS to enable all visa card holders to configure and receive alerts for any transaction they made.
+					This was a mandate in the USA for all card providers(Banks) to have a mechanism to send alerts for each transaction to the user,
+					which reduces fraud. This web application is accessibility complaint and also generates google analytics reports. 
+					We also implemented <strong>Adaptive Behavioural Authentication</strong> for this website, Where instead of username/passwor combination alone,
+					the user is authenticated based on the kind of interaction he usually has with the device.
+				</p>
+				<h4>2.  Issuer Onboarding tool</h4>
+				<p>
+					To Onboard an issuer(Bank) on to visa system, we developed this onboarding tool. This is a very complex web application,
+					which is developed using React/Redux javascript frameworks. This tool also enables an admin to maintain features and multiple versions of issuer apps in playstore/appstore. 
+					This tool could be used by banks as well as VISA internal admins. 
+					This project required much more discussions with Architects, UX designers and Product owners to understand the solution, also suggest them a better approach.
+				</p>
+			
+			<h3>Senior Frontend developer at Altimetrik for VISA ~ 2014-2015</h3>
+				<h4>1.  Responsive Mobie website for banks in USA</h4>
+				<p>
+					Developed white labeled banking apps using react js and backbone js. This solution adheres to WCAG AA
+					accessibility requirements. Google analytics was also integrated with this website. Common components 
+					architecture was followed, and we created resusable components and bundles that could be utilized by any other
+					react js based website in VISA. More than 70 banks in USA are using our solution as their banking website. 
+				</p>
+
+			<h3>Frontend developer in Mphasis an HP Company for Green Dot Bank ~ 2011-2014</h3>
+				<p>Developed application pages in Asp.net MVC 4 using Razor
+					view engine and integrated them with Web API.
+					Created multiple windows tools like “Screen Grab”, “IIS
+					Setter” which were highly appreciated from client
+					stakeholders and had been deployed as part of company’s
+					reusable library.</p>
+				
+
+		</section>
+		
+		<section id="articles">
+			<h2>Certifications</h2>
+			<ul>
+				<li itemprop="itemListElement">Swift 4 Essential Training</li>
+				<li itemprop="itemListElement">CSM(Certified Scrum master), by scrum alliance.</li>
+				<li itemprop="itemListElement">CSPO(Certified Scrum Product Owner), by scrum alliance.</li>
+			</ul>
+			
+		</section>
+
+	</div>
+</body>
+</html>
